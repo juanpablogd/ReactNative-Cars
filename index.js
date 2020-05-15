@@ -1,19 +1,9 @@
-//import libraries
-import React from 'react';
-import { AppRegistry, View } from 'react-native';
+/**
+ * @format
+ */
 
-import Header from './src/components/Header';
-import CarList from './src/components/CarList';
+import {AppRegistry} from 'react-native';
+import App from './App';
+import {name as appName} from './app.json';
 
-//create component
-const App = () => {
-  return (
-    <View style={{ flex: 1 }}>
-      <Header title={'Cars'} />
-      <CarList />
-    </View>
-  );
-};
-
-//render component to screen
-AppRegistry.registerComponent('cars', () => App);
+AppRegistry.registerComponent(appName, () => App);
